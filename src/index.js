@@ -14,25 +14,60 @@ async function obtenerUrlImagen(url) {
   }
 }
 
-module.exports = async function obtenerImagenes() {
-  const urls = [
-    'https://wantbot.xyz/wantapiwaifu/',
-    'https://wantbot.xyz/wantapiass/',
-    'https://wantbot.xyz/wantapibikinis/',
-    'https://wantbot.xyz/wantapidog/',
-    'https://wantbot.xyz/wantapiwaifuexotica/'
-  ];
-
-  const resultados = [];
-
-  for (const url of urls) {
-    try {
-      const imageUrl = await obtenerUrlImagen(url);
-      resultados.push({ url, imageUrl });
-    } catch (error) {
-      resultados.push({ url, error: error.message });
-    }
+async function wantapiwaifu() {
+  const url = 'https://wantbot.xyz/wantapiwaifu/';
+  try {
+    const imageUrl = await obtenerUrlImagen(url);
+    return imageUrl;
+  } catch (error) {
+    throw new Error(`Error al obtener la imagen de waifu: ${error.message}`);
   }
+}
 
-  return resultados;
+async function wantapiass() {
+  const url = 'https://wantbot.xyz/wantapiass/';
+  try {
+    const imageUrl = await obtenerUrlImagen(url);
+    return imageUrl;
+  } catch (error) {
+    throw new Error(`Error al obtener la imagen de ass: ${error.message}`);
+  }
+}
+
+async function wantapibikinis() {
+  const url = 'https://wantbot.xyz/wantapibikinis/';
+  try {
+    const imageUrl = await obtenerUrlImagen(url);
+    return imageUrl;
+  } catch (error) {
+    throw new Error(`Error al obtener la imagen de ass: ${error.message}`);
+  }
+}
+
+async function wantapidog() {
+  const url = 'https://wantbot.xyz/wantapidog/';
+  try {
+    const imageUrl = await obtenerUrlImagen(url);
+    return imageUrl;
+  } catch (error) {
+    throw new Error(`Error al obtener la imagen de ass: ${error.message}`);
+  }
+}
+
+async function wantapiwaifuexotica() {
+  const url = 'https://wantbot.xyz/wantapiwaifuexotica/';
+  try {
+    const imageUrl = await obtenerUrlImagen(url);
+    return imageUrl;
+  } catch (error) {
+    throw new Error(`Error al obtener la imagen de ass: ${error.message}`);
+  }
+}
+
+module.exports = {
+  wantapiwaifu,
+  wantapiass,
+  wantapibikinis,
+  wantapidog,
+  wantapiwaifuexotica
 };
