@@ -1,6 +1,6 @@
 {
   "name": "wantnsfw",
-  "version": "1.9.3",
+  "version": "1.10.3",
   "description": "Imagenes nsfw para web y botdiscord",
   "main": "src/index.js",
   "scripts": {

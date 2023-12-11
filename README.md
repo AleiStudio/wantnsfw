@@ -28,20 +28,24 @@ Esta NPM es ideal para proyectos que requieren la incorporación de contenido NS
 
 
 ```js
-const foto = require('wantnsfw');
+const want = require('wantnsfw');
 
-async function main() {
+async function wantapi() {
   try {
-    const waifuImage = await foto.wantapiwaifu();
-    console.log('Imagen de Waifu:', waifuImage);
+    // Obtener una imagen aleatoria de la categoría "waifu"
+    const waifuImage = await want.wantapiwaifu();
 
-    const assImage = await foto.wantapiass();
-    console.log('Imagen de Ass:', assImage);
+    // Verificar si se obtuvo una imagen
+    if (waifuImage) {
+      console.log('Imagen aleatoria de Waifu:', waifuImage);
+    } else {
+      console.log('No se encontró ninguna imagen.');
+    }
 
-    // Puedes hacer llamadas a otras funciones para obtener imágenes de diferentes categorías aquí...
   } catch (error) {
     console.error('Error:', error.message);
   }
 }
 
-main();
+// Ejecutar la función principal
+wantapi();
