@@ -28,7 +28,7 @@ Esta NPM es ideal para proyectos que requieren la incorporación de contenido NS
 
 
 ```js
-const foto = require('nombre-de-tu-modulo');
+const foto = require('wantnsfw');
 
 async function main() {
   try {
