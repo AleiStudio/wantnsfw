@@ -19,9 +19,9 @@ Esta NPM es ideal para proyectos que requieren la incorporación de contenido NS
  * wantapibikinis
  * wantapidog
  * wantapiwaifuexotica
- * WantAPIBoobs
- * WantAPIInfluencers
- * WantAPICosplay
+ * wantapiboobs
+ * wantapiinfluencers
+ * wantapicosplay
 
 # Soporte
 
