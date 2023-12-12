@@ -9,7 +9,6 @@ async function obtenerUrlsCategoria(url) {
 
     const imageUrls = [];
 
-    // Buscar en las etiquetas img dentro de figure
     $('figure.wp-block-image img[src]').each((_, element) => {
       imageUrls.push($(element).attr('src'));
     });
@@ -87,12 +86,43 @@ async function wantapiwaifuexotica() {
   }
 }
 
-// Otras funciones de categoría...
+async function wantapiboobs() {
+  const url = 'https://wantbot.xyz/wantapiboobs/';
+  try {
+    const imageUrl = await obtenerUrlAleatoria(url);
+    return imageUrl;
+  } catch (error) {
+    throw new Error(`Error al obtener la imagen de waifu: ${error.message}`);
+  }
+}
+
+async function wantapiinfluencers() {
+  const url = 'https://wantbot.xyz/wantapiinfluencers/';
+  try {
+    const imageUrl = await obtenerUrlAleatoria(url);
+    return imageUrl;
+  } catch (error) {
+    throw new Error(`Error al obtener la imagen de waifu: ${error.message}`);
+  }
+}
+
+async function wantapicosplay() {
+  const url = 'https://wantbot.xyz/wantapicosplay/';
+  try {
+    const imageUrl = await obtenerUrlAleatoria(url);
+    return imageUrl;
+  } catch (error) {
+    throw new Error(`Error al obtener la imagen de waifu: ${error.message}`);
+  }
+}
 
 module.exports = {
   wantapiwaifu,
   wantapiass,
   wantapibikinis,
   wantapidog,
-  wantapiwaifuexotica
+  wantapiwaifuexotica,
+  wantapiboobs,
+  wantapiinfluencers,
+  wantapicosplay
 };
