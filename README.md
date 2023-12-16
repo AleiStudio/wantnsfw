@@ -22,13 +22,8 @@ Esta NPM es ideal para proyectos que requieren la incorporación de contenido NS
  * wantapiboobs
  * wantapiinfluencers
  * wantapicosplay
-
-# Soporte
-
-[discord](https://discord.gg/CY6PX5fQA5)
-[pagina](https://wantbot.xyz/)
-
-
+ * wantapifemboys
+ * wantapischoolgirls
 
 ```js
 const want = require('wantnsfw');
@@ -52,3 +47,9 @@ async function wantapi() {
 
 // Ejecutar la función principal
 wantapi();
+```
+
+# Soporte
+
+[discord](https://discord.gg/CY6PX5fQA5)
+[pagina](https://wantbot.xyz/)

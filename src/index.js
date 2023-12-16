@@ -116,6 +116,26 @@ async function wantapicosplay() {
   }
 }
 
+async function wantapifemboys() {
+  const url = 'https://wantbot.xyz/wantapifemboys/';
+  try {
+    const imageUrl = await obtenerUrlAleatoria(url);
+    return imageUrl;
+  } catch (error) {
+    throw new Error(`Error al obtener la imagen de waifu: ${error.message}`);
+  }
+}
+
+async function wantapischoolgirls() {
+  const url = 'https://wantbot.xyz/wantapischoolgirls/';
+  try {
+    const imageUrl = await obtenerUrlAleatoria(url);
+    return imageUrl;
+  } catch (error) {
+    throw new Error(`Error al obtener la imagen de waifu: ${error.message}`);
+  }
+}
+
 module.exports = {
   wantapiwaifu,
   wantapiass,
@@ -124,5 +144,7 @@ module.exports = {
   wantapiwaifuexotica,
   wantapiboobs,
   wantapiinfluencers,
-  wantapicosplay
+  wantapicosplay,
+  wantapifemboys,
+  wantapischoolgirls
 };
